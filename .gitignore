@@ -1,0 +1,31 @@
+# Include your project-specific ignores in this file
+# Read about how to use .gitignore: https://help.github.com/articles/ignoring-files
+# files to ignore
+.classpath
+.project
+*.log
+*.log.[0-9]*
+*.orig
+*.bk
+tests/selenium/local_*
+*.lck
+*.spring*
+*.index
+*.zip
+*.bin
+*.threads
+
+# folders to ignore
+.gradle
+.settings
+.studio
+.idea
+bin
+build
+target
+.externalToolBuilders
+**/src/main/webapp/resources
+**/test/coverage
+
+*.iml
+*.DS_STORE
