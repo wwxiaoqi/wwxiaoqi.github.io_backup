@@ -13640,7 +13640,7 @@
     wf.prototype.setup = function() {
         var a = this;
         this.tapInstructionsElement = document.getElementById("instructions");
-        ee = PIXI.loader.add("img/intro.png").add("spritesheets/intro.json").load(function() {
+        ee = PIXI.loader.add("spritesheets/intro.png").add("spritesheets/intro.json").load(function() {
             P = PIXI.loader.resources["spritesheets/intro.json"];
             Sf(a)
         });
@@ -14250,7 +14250,7 @@
     n(Yf, dg);
     var $f = function() {
         dg.call(this, {
-            src: ["/logos/2017/fischinger/sounds/instruments/horn.ogg", "/logos/2017/fischinger/sounds/instruments/horn.m4a", "/logos/2017/fischinger/sounds/instruments/horn.mp3", "/logos/2017/fischinger/sounds/instruments/horn.ac3"],
+            src: ["sounds/instruments/horn.ogg", "sounds/instruments/horn.m4a", "sounds/instruments/horn.mp3", "/logos/2017/fischinger/sounds/instruments/horn.ac3"],
             sprite: {
                 "A#0": [0, 2E3],
                 "A#1": [2100, 2E3],
@@ -14296,7 +14296,7 @@
     n($f, dg);
     var Xf = function() {
         dg.call(this, {
-            src: ["/logos/2017/fischinger/sounds/instruments/key.ogg", "/logos/2017/fischinger/sounds/instruments/key.m4a", "/logos/2017/fischinger/sounds/instruments/key.mp3", "/logos/2017/fischinger/sounds/instruments/key.ac3"],
+            src: ["sounds/instruments/key.ogg", "sounds/instruments/key.m4a", "sounds/instruments/key.mp3", "/logos/2017/fischinger/sounds/instruments/key.ac3"],
             sprite: {
                 "A#0": [0, 2E3],
                 "A#1": [2100, 2E3],
@@ -14342,7 +14342,7 @@
     n(Xf, dg);
     var Zf = function() {
         dg.call(this, {
-            src: ["/logos/2017/fischinger/sounds/instruments/pluck.ogg", "/logos/2017/fischinger/sounds/instruments/pluck.m4a", "/logos/2017/fischinger/sounds/instruments/pluck.mp3", "/logos/2017/fischinger/sounds/instruments/pluck.ac3"],
+            src: ["sounds/instruments/pluck.ogg", "sounds/instruments/pluck.m4a", "sounds/instruments/pluck.mp3", "/logos/2017/fischinger/sounds/instruments/pluck.ac3"],
             sprite: {
                 "A#0": [0, 2E3],
                 "A#1": [2100, 2E3],
@@ -14986,7 +14986,8 @@
         this.fischinger_ProgressIcon$canvas.width = 80;
         this.fischinger_ProgressIcon$canvas.height = 80;
         this.ctx = this.fischinger_ProgressIcon$canvas.getContext("2d");
-        this.imgElement = b.lastChild;
+        // this.imgElement = b.lastChild;
+        this.imgElement = b.lastElementChild;
         this.imgElement.style.opacity = 0;
         this.circleStartAngle = -Math.PI / 2;
         this.domElement = b;
